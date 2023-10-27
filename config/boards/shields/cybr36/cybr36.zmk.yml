@@ -1,0 +1,11 @@
+file_format: "1"
+id: cybr36
+name: cybr36
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - cybr36_left
+  - cybr36_right

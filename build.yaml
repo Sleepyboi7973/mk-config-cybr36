@@ -14,4 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: two_percent_milk
+    shield: cybr36_left
+  - board: nice_nano_v2
+    shield: cybr36_right
