@@ -1,4 +1,4 @@
-if SHIELD_cybr36_RIGHT
+if SHIELD_CYBR36_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "cybr36"
@@ -8,7 +8,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_cybr36_LEFT || SHIELD_cybr36_RIGHT
+if SHIELD_CYBR36_LEFT || SHIELD_CYBR36_RIGHT
 
 config ZMK_SPLIT
     default y
