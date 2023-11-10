@@ -1,5 +1,5 @@
-config SHIELD_cybr36_LEFT
+config SHIELD_CYBR36_LEFT
     def_bool $(shields_list_contains,cybr36_left)
 
-config SHIELD_MY_cybr36_RIGHT
+config SHIELD_MY_CYBR36_RIGHT
     def_bool $(shields_list_contains,cybr36_right)
