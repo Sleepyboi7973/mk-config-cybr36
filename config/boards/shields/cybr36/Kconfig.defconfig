@@ -1,4 +1,4 @@
-if SHIELD_cybr36_LEFT
+if SHIELD_cybr36_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "cybr36"
