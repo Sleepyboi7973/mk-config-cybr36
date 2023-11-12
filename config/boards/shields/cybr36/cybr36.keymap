@@ -25,8 +25,20 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp C_PP>, <&kp C_NEXT>, <&kp C_PREV>;
+        };
+    };
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -37,7 +49,7 @@
 
             bindings = <
     &kp Q      &kp W      &kp E       &kp R       &kp T                  &kp Y        &kp U       &kp I       &kp O      &kp P
-    &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                  &kp H        &mt LSHFT J &mt LCTRL K &mt LALT L &mt LGUI SEMI
+    &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G                  &kp H        &hm LSHFT J &hm LCTRL K &hm LALT L &hm LGUI SEMI
     &kp Z      &kp X      &kp C       &kp V       &kp B                  &kp N        &kp M       &kp COMMA   &kp DOT    &kp FSLH
                           &lt NAV ESC &kp SPACE   &lt MEDIA RET          &lt FUNC DEL &kp BSPC    &lt NUM TAB     
             >;
